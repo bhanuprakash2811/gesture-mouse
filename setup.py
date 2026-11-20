@@ -1,0 +1,29 @@
+"""
+Setup script for Gesture Controlled Virtual Mouse.
+"""
+from setuptools import setup, find_packages
+
+setup(
+    name='gesture-mouse',
+    version='1.0.0',
+    description='Gesture Controlled Virtual Mouse with Hand Interaction and Voice Commands',
+    author='Your Name',
+    packages=find_packages(include=['src', 'src.*']),
+    install_requires=[
+        'opencv-python>=4.8.0,<5',
+        'opencv-contrib-python>=4.8.0,<5',
+        'mediapipe==0.10.14',
+        'tensorflow>=2.13.0,<2.20',
+        'numpy>=1.24.0',
+        'pyautogui>=0.9.54',
+        'SpeechRecognition>=3.10.0',
+        'pyaudio>=0.2.13',
+        'pybind11>=2.11.0',
+        'scikit-learn>=1.3.0',
+        'matplotlib>=3.7.0',
+        'seaborn>=0.12.0',
+        'pandas>=2.0.0',
+    ],
+    python_requires='>=3.8',
+)
+

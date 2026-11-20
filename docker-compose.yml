@@ -1,0 +1,12 @@
+services:
+  gesture-mouse:
+    build:
+      context: .
+    image: gesture-mouse:local
+    init: true
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./results:/app/results
