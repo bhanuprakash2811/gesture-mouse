@@ -170,7 +170,7 @@ gesture_mouse/
 
 ## Performance Optimization
 
-- **Optional C++ module**: The native source archive is preserved but not extracted; the current workspace runs without it.
+- **Optional C++ module**: Native sources are not included in the repository; the current workspace runs without them.
 - **Exponential Moving Average**: Smooths cursor movement
 - **Gesture Cooldown**: Prevents rapid repeated actions
 - **Efficient CNN**: Lightweight architecture for real-time inference
